@@ -9,7 +9,6 @@ class TestModel extends StateModel{
     title = "";
     #inited = false;
     async load(){
-        console.log("load", this.#inited);
         if(this.#inited) return;
         this.#inited = true;
         const {title} = await (await fetch("rsc.json")).json();
