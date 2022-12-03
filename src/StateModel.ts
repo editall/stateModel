@@ -6,7 +6,7 @@ export default class StateModel {
         let count = 1;
         const state = ()=>s(count++);
         Reflect.ownKeys(this).forEach(name=>{
-            if(typeof name == "symbol" || name[0] == '_') return;
+            if(typeof name == "symbol") return;
             // @ts-ignore
             let value = this[name];
             Object.defineProperty(this, name, {
