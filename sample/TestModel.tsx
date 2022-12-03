@@ -15,7 +15,7 @@ export class TestModel extends StateModel{
     username = new UserName();
     #items:ItemModel[] = [];
     #isInited = false;
-    async load(){
+    load = async()=>{
         if(this.#isInited) return;
         this.#isInited = true;
         const {title, items} = await (await fetch("rsc.json")).json();
@@ -28,22 +28,22 @@ export class TestModel extends StateModel{
             item.STYLE = item.STYLE.replace("@color@", it.color);
             return item;
         });
-    }
+    };
     removeItem = (item:ItemModel)=>{
         const idx = this.#items.indexOf(item);
         if(idx == -1) return;
         this.#items.splice(idx, 1);
         this.update();
-    }
+    };
     addItem = (item:ItemModel)=>{
         this.#items.push(item);
         this.update();
-    }
+    };
     list = (f:(item:ItemModel)=>JSX.Element)=>{
         return <>{
             this.#items.map(item=>f(item))
         }</>;
-    }
+    };
     /*override before(key:string, oldValue:any, newValue:any){
         console.log(key, oldValue, newValue);
     }*/
