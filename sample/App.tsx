@@ -1,5 +1,5 @@
-import {Test} from "./test";
+import {TodoView} from "./todoView";
 
 export default function App() {
-  return <Test/>
+  return <TodoView/>
 }

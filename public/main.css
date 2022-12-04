@@ -1,0 +1,5 @@
+.todo{width:500px}
+.todo input{display:block;line-height:30px;font-size:30px}
+.todo-item:after{clear: both;}
+.todo-item-title{margin-right: 20px}
+.todo-item-trash{background:#fff;float:right; width:20px;cursor:pointer}

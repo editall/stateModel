@@ -1,9 +1,9 @@
 {
-    "title": "hello world",
+    "title": "Todo List",
     "items": [
-        {"key":0, "title": "item0", "value": 0, "color": "#f00"},
-        {"key":1, "title": "item1", "value": 1, "color": "#ff0"},
-        {"key":2, "title": "item2", "value": 2, "color": "#f0f"},
-        {"key":3, "title": "item3", "value": 3, "color": "#00f"}
+        {"key":0, "title": "todo1", "isCompleted": false},
+        {"key":1, "title": "todo2", "isCompleted": false},
+        {"key":2, "title": "todo3", "isCompleted": false},
+        {"key":3, "title": "todo4", "isCompleted": false}
     ]
 }
