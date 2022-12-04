@@ -1,7 +1,8 @@
-import {ViewModel} from "../src/viewModel/ViewModel";
-import {Todo} from "./Todo";
+import {ViewModel} from "../../../src/viewModel/ViewModel";
+import {Todo} from "../Todo";
 
 export class Item extends ViewModel {
+
     key = "";
     trash = new ItemTrash();
     title = new ItemTitle();

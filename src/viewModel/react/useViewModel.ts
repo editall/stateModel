@@ -1,4 +1,4 @@
-import {ViewModel} from "./ViewModel";
+import {ViewModel} from "../ViewModel";
 import {useState} from "react";
 
 export function useViewModel<T extends ViewModel>(vmType: { new(...arg:any): T }, ...arg:any): T {

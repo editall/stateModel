@@ -1,9 +1,9 @@
-import {useViewModel} from "../src/viewModel/useViewModel";
+import {useViewModel} from "../../src/viewModel/react/useViewModel";
 import {Todo} from "./Todo";
-import {ItemView} from "./itemView";
+import {ItemView} from "./item/itemView";
 
 export const TodoView = (prop:any)=>{
-    const test:Todo = useViewModel(Todo);
+    const test = useViewModel(Todo);
     test.load();
     const {title, newItem} = test;
     return <section className="todo">
@@ -12,4 +12,3 @@ export const TodoView = (prop:any)=>{
         <ul>{test.list(ItemView)}</ul>
     </section>
 }
-

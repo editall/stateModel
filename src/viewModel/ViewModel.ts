@@ -1,5 +1,3 @@
-import {SetStateAction} from "react";
-
 const defaultRerender = ()=>{};
 
 export class ViewModel {
@@ -9,16 +7,16 @@ export class ViewModel {
     parentAs<T extends ViewModel>(type:{new (...arg:any):T}):T|null{
         return this.#parent instanceof type ? this.#parent : null;
     }
-
+    
     //rerender
     #rerender = defaultRerender;
     get rerender(){return this.#rerender;}
 
     //override trap
     protected beforeSet(key:string, oldValue:any, newValue:any){}
-    protected inited(){}
+    protected afterInit(){}
 
-    init(rerender:((value: SetStateAction<number>)=>void) | ViewModel) {
+    init(rerender:((value:any)=>void) | ViewModel) {
         let count = 1;
         if(rerender instanceof ViewModel){
             this.#parent = rerender;
@@ -39,6 +37,6 @@ export class ViewModel {
                 }
             });
         });
-        this.inited();
+        this.afterInit();
     }
 }

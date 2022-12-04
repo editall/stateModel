@@ -8,7 +8,7 @@ export class ListModel<T> extends ViewModel {
         this.#data = arg;
     }
 
-    override inited() {
+    override afterInit() {
         if (this.parent) this.#data.forEach(item => item instanceof ViewModel && item.init(this.parent!));
     }
 
@@ -41,6 +41,10 @@ export class ListModel<T> extends ViewModel {
 
     indexOf(item: T): number {
         return this.#data.indexOf(item);
+    }
+
+    map<R>(f:(item:T, index?:number, target?:T[])=>R):R[]{
+        return this.#data.map(f);
     }
 }
 export function listVM<T>(...items:T[]){
