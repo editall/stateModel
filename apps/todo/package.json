@@ -2,11 +2,10 @@
   "name": "todo",
   "version": "0.0.1",
   "description": "",
-  "type": "module",
   "scripts": {
     "todo:dev": "vite",
     "build": "vite build --config=vite.config.js",
-    "preview": "vite preview",
+    "preview": "npm run build && vite preview",
     "test": "vitest",
     "release": "release-it"
   },
@@ -41,8 +40,6 @@
     "viewmodel-react": "*"
   },
   "devDependencies": {
-    "viewmodel": "*",
-    "viewmodel-react": "*",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "release-it": "^15.5.1",

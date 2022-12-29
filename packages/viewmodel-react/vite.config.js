@@ -22,7 +22,8 @@ export default defineConfig({
       fileName: "viewmodel-react",
     },
     rollupOptions: {
-      external: ["react", "react-dom"]
+      external: ["react", "react-dom", "viewmodel"]
     }
+
   }
 });
