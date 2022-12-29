@@ -5,14 +5,14 @@
   "type": "module",
   "scripts": {
     "todo:dev": "vite",
-    "build": "vite build",
+    "build": "vite build --config=vite.config.js",
     "preview": "vite preview",
     "test": "vitest",
     "release": "release-it"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/entityjs/entityJS.git"
+    "url": "git+https://github.com/editall/viewmodel.git"
   },
   "keywords": [
     "todo",
@@ -41,6 +41,8 @@
     "viewmodel-react": "*"
   },
   "devDependencies": {
+    "viewmodel": "*",
+    "viewmodel-react": "*",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
     "release-it": "^15.5.1",
