@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import path from "path";
+import eslint from "vite-plugin-eslint";
 
 
 export default defineConfig({
@@ -21,5 +22,6 @@ export default defineConfig({
       name: "viewmodel",
       fileName:"viewmodel"
     }
-  }
+  },
+  //plugins:[eslint()]
 });
