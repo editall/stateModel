@@ -1,0 +1,51 @@
+{
+  "name": "todo",
+  "version": "0.0.1",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "todo:dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "vitest",
+    "release": "release-it"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entityjs/entityJS.git"
+  },
+  "keywords": [
+    "todo",
+    "viewmodel"
+  ],
+  "author": "editall",
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "hikaMaeng",
+      "email": "hika00@gmail.com"
+    },
+    {
+      "name": "easylogic",
+      "email": "cyberuls@gmail.com"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/editall/viewmodel/issues"
+  },
+  "homepage": "https://github.com/editall/viewmodel#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "viewmodel": "*",
+    "viewmodel-react": "*"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "release-it": "^15.5.1",
+    "typescript": "^4.9.4",
+    "vite": "^4.0.0",
+    "vitest": "0.25.7"
+  }
+}

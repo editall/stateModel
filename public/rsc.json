@@ -1,9 +1,0 @@
-{
-    "title": "Todo List",
-    "items": [
-        {"key":0, "title": "todo1", "isCompleted": false},
-        {"key":1, "title": "todo2", "isCompleted": false},
-        {"key":2, "title": "todo3", "isCompleted": false},
-        {"key":3, "title": "todo4", "isCompleted": false}
-    ]
-}
